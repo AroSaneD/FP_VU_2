@@ -1,0 +1,42 @@
+name:                FPTicTacToeAS
+version:             0.1.0.0
+synopsis:            _\_(?)_/_
+homepage:            arsen.lt
+license:             Apache-2.0
+license-file:        LICENSE
+author:              AroSaneD
+maintainer:          mail.junk.3135@gmail.com
+category:            Game
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     FPTicTacToeAS.Game
+  build-depends:       http-client
+                     , bytestring
+                     , lens 
+                     , wreq
+                     , containers
+                     , base >=4.9
+  default-language:    Haskell2010
+
+executable FPTicTacToeAS
+  main-is:             Main.hs
+  build-depends:       base,
+                       FPTicTacToeAS
+  hs-source-dirs:      app
+  default-language:    Haskell2010
+  
+
+Test-Suite test-FPTicTacToeAS
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Main.hs
+  build-depends:       base >=4.9,
+                       FPTicTacToeAS,
+                       hspec
+  default-language:    Haskell2010
+  

@@ -1,0 +1,16 @@
+Test suite test-FPTicTacToeAS: RUNNING...
+
+TicTacToe.Actions.Winner
+  The first move, if no prior moves, will be in the center
+  The first player should always be the x
+  Moves should be correctly parsed into scala
+  The algorithm should react instantly to situations, where it would lose
+  The algorithm should correctly assess the winner of a board (1)
+  The algorithm should correctly assess the winner of a board (2)
+  The algorithm should correctly assess the winner of a board (3)
+  always returns true
+
+Finished in 0.0005 seconds
+8 examples, 0 failures
+Test suite test-FPTicTacToeAS: PASS
+Test suite logged to: dist\test\FPTicTacToeAS-0.1.0.0-test-FPTicTacToeAS.log
